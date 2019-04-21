@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.lucaophp.cardenetatopografica.CadastroEstacaActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Descricao da estaca"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/txtLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtDescricao"
+        android:layout_alignStart="@+id/edtDescricao"
+        android:layout_below="@+id/edtDescricao"
+        android:layout_marginTop="129dp"
+        android:text="0.0"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtLong"
+        android:layout_alignBottom="@+id/txtLong"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:text="0.0"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnSalvarEstaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:text="SALVAR" />
+
+    <TextView
+        android:id="@+id/txtCota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="0.0"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
+</RelativeLayout>

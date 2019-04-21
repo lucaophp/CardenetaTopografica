@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.lucaophp.cardenetatopografica.CadastroProjetoActivity">
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Projeto:"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="98dp"
+        android:layout_above="@+id/edtNomeProjeto"
+        android:layout_alignLeft="@+id/edtNomeProjeto"
+        android:layout_alignStart="@+id/edtNomeProjeto" />
+
+    <EditText
+        android:id="@+id/edtNomeProjeto"
+        android:layout_width="262dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="134dp"
+        android:layout_marginBottom="101dp"
+        android:layout_above="@+id/btnSalvarProjeto"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnSalvarProjeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SALVAR"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="247dp"
+        android:layout_marginBottom="107dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
